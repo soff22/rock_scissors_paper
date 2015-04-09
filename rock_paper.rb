@@ -3,14 +3,11 @@ question = "What do you choose?"
 puts question
 user = gets.chomp
 puts "Your choice is " + user
-choices = ["rock", "scissors", "paper", "quit"]
+choices = ["rock", "scissors", "paper"]
 a = choices.shuffle
 computer = a[0]
-choices[3].exclude if choices[3].include? computer
 if not choices.include? user
 	puts "Read the game rules"
-elsif choices[3].include? user
-	puts "Game_end"
 else
 	puts "What does the computer choose?"
 	puts computer
