@@ -4,8 +4,7 @@ puts question
 user = gets.chomp
 puts "Your choice is " + user
 choices = ["rock", "scissors", "paper"]
-a = choices.shuffle
-computer = a[0]
+computer = choices.sample()
 if not choices.include? user
 	puts "Read the game rules"
 else
