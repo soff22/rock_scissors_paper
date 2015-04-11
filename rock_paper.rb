@@ -1,12 +1,11 @@
 options = {"rock" => "scissors", "scissors" => "paper", "paper" => "rock"}
-question = "What do you choose?"
+question = "What do you choose? or Type \"quit\" to exit"
 while true
 	puts question
 	user = gets.chomp
 	puts "Your choice is " + user
 	choices = ["rock", "scissors", "paper"]
 	computer = choices.sample
-	finish = "quit"
 	if not choices.include? user
 		puts "Read the game rules"
 	else
@@ -18,10 +17,12 @@ while true
 			puts "You win"
 		else 
 			puts "Computer wins"
-		#puts "End the game"
-		#break
 		end
 	end
 end
+	
+
+	
+
 
 
