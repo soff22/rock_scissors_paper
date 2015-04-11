@@ -1,6 +1,8 @@
 options = {"rock" => "scissors", "scissors" => "paper", "paper" => "rock"}
 question = "What do you choose? or Type \"quit\" to exit"
-while true
+for number_of_games_played in 1..5
+	print "#{number_of_games_played} "
+	break if number_of_games_played > 5
 	puts question
 	user = gets.chomp
 	puts "Your choice is " + user
@@ -20,6 +22,7 @@ while true
 		end
 	end
 end
+	puts "End of the Game"
 	
 
 	
