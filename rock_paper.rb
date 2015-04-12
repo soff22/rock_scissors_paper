@@ -8,6 +8,7 @@ for number_of_games_played in 1..5
 	puts "Your choice is " + user
 	choices = ["rock", "scissors", "paper"]
 	computer = choices.sample
+	break if user == "quit"
 	if not choices.include? user
 		puts "Read the game rules"
 	else
