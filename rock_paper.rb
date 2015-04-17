@@ -1,6 +1,7 @@
 options = {"rock" => "scissors", "scissors" => "paper", "paper" => "rock"}
 question = "What do you choose? or Type \"quit\" to exit"
-for number_of_games_played in 1..5
+number_of_games_played = 1
+while number_of_games_played <= 6 do
 	print "#{number_of_games_played} "
 	break if number_of_games_played > 5
 	puts question
@@ -12,6 +13,7 @@ for number_of_games_played in 1..5
 	if not choices.include? user
 		puts "Read the game rules"
 	else
+		number_of_games_played += 1 
 		puts "What does the computer choose?"
 		puts computer
 		if user == computer
